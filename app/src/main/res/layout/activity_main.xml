@@ -8,7 +8,7 @@
 
     <TableRow>
         <TextView
-            android:id="@+id/title_textview"
+            android:id="@+id/scoreKeeper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_string"
@@ -63,13 +63,6 @@
     </TableRow>
 
     <TableRow>
-        <Button
-            android:id="@+id/decrease_TeamB_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/decrease_string"
-            tools:layout_editor_absoluteX="271dp"
-            tools:layout_editor_absoluteY="362dp" />
 
         <Button
             android:id="@+id/decrease_TeamA_Button"
@@ -78,5 +71,36 @@
             android:text="@string/decrease_string"
             tools:layout_editor_absoluteX="39dp"
             tools:layout_editor_absoluteY="362dp" />
+
+        <Button
+            android:id="@+id/decrease_TeamB_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_string"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="362dp" />
+    </TableRow>
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/rad_group">
+
+            <RadioButton
+                android:id="@+id/rad_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rad_1" />
+
+            <RadioButton
+                android:id="@+id/rad_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rad_2" />
+
+            <RadioButton
+                android:id="@+id/rad_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rad_3" />
+        </RadioGroup>
     </TableRow>
 </TableLayout>
